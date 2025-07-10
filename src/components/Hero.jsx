@@ -39,7 +39,7 @@ const Hero = () => {
     },
   ];
   return (
-    <div className="w-full min-h-screen text-white">
+    <div className="w-full min-h-screen bg-black text-white">
       <Navbar />
       <div className="py-[3rem] px-[2rem] w-full">
         <div>
@@ -89,10 +89,6 @@ const Hero = () => {
                 <div>
                   <div className="bg-gray-100 p-18"></div>
                   <h3 className="text-center italics">Your Top Songs 2021</h3>
-                </div>
-                <div>
-                  <div className="bg-gray-100 p-18"></div>
-                  <h3 className="text-center italics">Your Artist Revealed</h3>
                 </div>
               </div>
             </div>

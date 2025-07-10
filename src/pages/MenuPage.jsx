@@ -3,32 +3,32 @@ import { CgSearch } from "react-icons/cg";
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
 
-const Searchtabs = () => {
+const MenuPage = () => {
   const navigate = useNavigate();
   const tabs = [
     {
-      category: "All Girls",
+      category: "Account",
     },
     {
-      category: "Everyday Orgy",
+      category: "Store",
     },
     {
-      category: "AnalAnal",
+      category: "Settings",
     },
     {
-      category: "No Boys",
+      category: "Houses",
     },
     {
-      category: "BBC Freaks",
+      category: "Naughty Flix",
     },
     {
-      category: "Nasty Gal",
+      category: "Go Live",
     },
     {
-      category: "Amargerdon",
+      category: "Made for you",
     },
     {
-      category: "All you can fuck",
+      category: "Funds",
     },
   ];
   return (
@@ -44,16 +44,11 @@ const Searchtabs = () => {
               className="cursor-pointer text-4xl rounded-full px-1 border-2"
             />
 
-            <p>Now choose one or more houses that interest you.</p>
+            <p>Your Top Genres</p>
           </div>
-          <div className="bg-white text-black items-center flex md:w-[350px] w-full">
-            <CgSearch className="p-4 text-5xl  text-black" />
-            <input
-              className="text-black outline-none p-3 rounded-xl w-[250px]"
-              type="text"
-              placeholder="Search Here..."
-            />
-          </div>
+          {/* <div className="bg-white text-black items-center flex md:w-[350px] w-full">
+            
+          </div> */}
         </div>
 
         {/* search options */}
@@ -62,8 +57,10 @@ const Searchtabs = () => {
           {tabs.map((item, index) => (
             <div key={index}>
               <div className="flex flex-col">
-                <div className=" rounded-2xl bg-gray-200 py-14"></div>
-                <p className="text-center text-xl">{item.category}</p>
+                <div className=" rounded-2xl bg-gray-200 py-14">
+                  <p className="text-black text-center text-xl">{item.category}</p>
+                </div>
+                
               </div>
             </div>
           ))}
@@ -73,4 +70,4 @@ const Searchtabs = () => {
   );
 };
 
-export default Searchtabs;
+export default MenuPage;
