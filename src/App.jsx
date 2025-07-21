@@ -4,19 +4,19 @@ import { Routes, Route } from "react-router-dom";
 import SearchPage from "./pages/SearchPage";
 import MenuPage from "./pages/MenuPage";
 import ProfilePage from "./pages/ProfilePage";
-import CategoryPage from "./pages/CategoryPage"
-import SearchFilter from "./pages/SearchFilter"
+import CategoryPage from "./pages/CategoryPage";
+import SearchFilter from "./pages/SearchFilter";
 
 const App = () => {
   return (
-    <div>
+    <div className="min-h-screen max-w-full bg-white">
       <Routes>
         <Route path="/" element={<Hero />} />
-        <Route path="/search" element={<SearchPage />} />
+        <Route path="/houses" element={<SearchPage />} />
         <Route path="/menu" element={<MenuPage />} />
         <Route path="/profile" element={<ProfilePage />} />
-        <Route path="/category" element={<CategoryPage/>}/>
-        <Route path="/search-page" element={<SearchFilter/>}/>
+        <Route path="/category" element={<CategoryPage />} />
+        <Route path="/search-page" element={<SearchFilter />} />
       </Routes>
     </div>
   );
